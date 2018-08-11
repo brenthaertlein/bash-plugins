@@ -61,9 +61,7 @@ fn_div() {
     echo "Setting scale to $3"
   fi
   local scale=${3:-2}
-  local dividend=$1
-  local divisor=$2
-  local calc="scale=$scale ; $dividend / $divisor"
+  local calc="scale=$scale ; $1 / $2"
   local result=$(bc <<< $calc)
   if [ ! -z $3 ]; then
     echo $result
