@@ -68,7 +68,8 @@ fn_div() {
   if [ ! -z $3 ]; then
     echo $result
   else
-    echo $result | sed 's/\.*0$*//'
+    # should probably learn what happened with sed here
+    echo $result | sed '/\./ s/\.\{0,1\}0\{1,\}$//'
   fi
 }
 
