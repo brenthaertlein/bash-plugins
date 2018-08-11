@@ -7,6 +7,7 @@ e.g. `chrome https://www.stackoverflow.com`
 
 ### google
 e.g. `google "foo bar and the baz" bing is the worst`
+
   => `https://www.google.com/search?q=%22foo%20bar%20and%20the%20baz%22+bing+is+the+worst`
   
 ### concat
